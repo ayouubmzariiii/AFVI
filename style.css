@@ -870,51 +870,75 @@ p {
 }
 
 /* ========================================
-   QUICK LINKS (Carte)
+   WHY CHOOSE US (Nos Piliers)
    ======================================== */
-.home-quick-links {
+.home-features {
   padding: var(--space-4xl) 0;
   background: var(--color-white);
 }
 
-.quick-links-grid {
+.home-features-head {
+  text-align: center;
+}
+
+.home-features-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-lg);
-  max-width: 900px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2xl);
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.quick-link-item {
+.feature-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
-  color: var(--color-primary);
-  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+  padding: var(--space-xl);
+  background: var(--color-light-bg);
+  border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.feature-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  border-radius: 50%;
+  margin-bottom: var(--space-lg);
+  color: var(--color-secondary);
+  font-size: 2rem;
+  box-shadow: var(--shadow-sm);
   transition: all var(--transition-base);
 }
 
-.quick-link-item:hover {
-  background: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
-}
-
-.quick-link-item i {
-  font-size: 2.5rem;
-  margin-bottom: var(--space-md);
-  color: var(--color-secondary);
-}
-
-.quick-link-item:hover i {
+.feature-item:hover .feature-icon {
+  background: var(--color-secondary);
   color: var(--color-white);
 }
 
-.quick-link-item span {
-  font-size: 1rem;
-  font-weight: 600;
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.feature-desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* ========================================

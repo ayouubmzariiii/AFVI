@@ -17,10 +17,10 @@ $hero_image = get_theme_mod('afvi_hero_image_1') ?: AFVI_URI . '/img/hero-bg-wid
     <div class="home-hero-inner container text-center">
         <div class="home-hero-content mx-auto">
             <h1 class="home-hero-title">
-                <?php echo esc_html(afvi_get('afvi_hero_title', 'Grandir, apprendre & s\'épanouir')); ?>
+                <?php echo esc_html(afvi_get('afvi_hero_title', 'Façonner les leaders de demain.')); ?>
             </h1>
             <p class="home-hero-desc">
-                <?php echo esc_html(afvi_get('afvi_hero_description', 'De la maternelle au lycée, AFVI accompagne chaque élève dans un environnement trilingue, stimulant et bienveillant.')); ?>
+                <?php echo esc_html(afvi_get('afvi_hero_description', 'Une éducation d\'excellence, multilingue et résolument tournée vers l\'avenir. Rejoignez une communauté où la réussite de chaque élève est notre priorité absolue.')); ?>
             </p>
             <div class="home-hero-actions justify-center">
                 <a href="<?php echo esc_url(home_url('/admissions')); ?>" class="btn btn-accent"><?php echo esc_html__('Inscriptions', 'afvi'); ?> <i class="fas fa-arrow-right"></i></a>
@@ -37,20 +37,21 @@ $hero_image = get_theme_mod('afvi_hero_image_1') ?: AFVI_URI . '/img/hero-bg-wid
         <h2 class="sr-only"><?php echo esc_html__('Chiffres Clés', 'afvi'); ?></h2>
         <ul class="home-stats-grid">
             <li class="home-stats-item">
-                <span class="home-stats-num" data-target="<?php echo esc_attr(afvi_get('afvi_students_count', '1500')); ?>">0</span>
-                <span class="home-stats-label"><?php echo esc_html__('Étudiants', 'afvi'); ?></span>
+                <span class="home-stats-num" data-target="<?php echo esc_attr(afvi_get('afvi_students_count', '1200')); ?>">0</span>
+                <span class="home-stats-label"><?php echo esc_html__('Élèves de Maternelle au Lycée', 'afvi'); ?></span>
             </li>
             <li class="home-stats-item">
-                <span class="home-stats-num" data-target="<?php echo esc_attr(afvi_get('afvi_teachers_count', '120')); ?>">0</span>
-                <span class="home-stats-label"><?php echo esc_html__('Enseignants', 'afvi'); ?></span>
+                <span class="home-stats-num" data-target="<?php echo esc_attr(afvi_get('afvi_teachers_count', '150')); ?>">0</span>
+                <span class="home-stats-label"><?php echo esc_html__('Enseignants Qualifiés', 'afvi'); ?></span>
             </li>
             <li class="home-stats-item">
-                <span class="home-stats-num" data-target="<?php echo esc_attr(afvi_get('afvi_programs_count', '15')); ?>">0</span>
-                <span class="home-stats-label"><?php echo esc_html__('Programmes', 'afvi'); ?></span>
+                <span class="home-stats-num" data-target="<?php echo esc_attr(afvi_get('afvi_programs_count', '100')); ?>">0</span>
+                <span class="home-stats-num-suffix">%</span>
+                <span class="home-stats-label"><?php echo esc_html__('Réussite au Baccalauréat', 'afvi'); ?></span>
             </li>
             <li class="home-stats-item">
-                <span class="home-stats-num" data-target="<?php echo esc_attr(afvi_get('afvi_years_count', '25')); ?>">0</span>
-                <span class="home-stats-label"><?php echo esc_html__('Ans d\'excellence', 'afvi'); ?></span>
+                <span class="home-stats-num" data-target="<?php echo esc_attr(afvi_get('afvi_years_count', '3')); ?>">0</span>
+                <span class="home-stats-label"><?php echo esc_html__('Langues Enseignées (FR-EN-AR)', 'afvi'); ?></span>
             </li>
         </ul>
     </div>
@@ -60,10 +61,11 @@ $hero_image = get_theme_mod('afvi_hero_image_1') ?: AFVI_URI . '/img/hero-bg-wid
 <section class="home-about" id="about">
     <div class="container text-center">
         <div class="home-about-content mx-auto" style="max-width: 800px;">
-            <span class="home-about-eyebrow"><?php echo esc_html__('Bienvenue à', 'afvi'); ?></span>
-            <h2 class="home-about-title"><?php echo esc_html__('AFVI — Formation & Excellence', 'afvi'); ?></h2>
-            <p class="home-about-lead"><?php echo esc_html__('À AFVI, nos élèves sont encouragés à découvrir et à questionner le monde. L\'observation, la manipulation et l\'expérimentation permettent de construire solidement les connaissances.', 'afvi'); ?></p>
-            <a href="<?php echo esc_url(home_url('/about')); ?>" class="btn btn-outline-dark mt-4"><?php echo esc_html__('En savoir plus', 'afvi'); ?> <i class="fas fa-arrow-right"></i></a>
+            <span class="home-about-eyebrow"><?php echo esc_html__('Mot de la Direction', 'afvi'); ?></span>
+            <h2 class="home-about-title"><?php echo esc_html__('L\'Excellence, Notre Engagement Quotidien', 'afvi'); ?></h2>
+            <p class="home-about-lead"><?php echo esc_html__('Le Groupe Scolaire AFVI s\'est fixé pour mission d\'offrir un enseignement d\'excellence s\'adressant à toutes les intelligences. Notre ambition est de cultiver l\'esprit critique, la créativité et le sens des responsabilités chez nos élèves afin d\'en faire des citoyens du monde accomplis.', 'afvi'); ?></p>
+            <p class="home-about-desc mt-3"><?php echo esc_html__('Grâce à une infrastructure ultramoderne et un corps enseignant dévoué, nous garantissons un environnement d\'apprentissage stimulant où chaque élève est accompagné individuellement vers sa propre réussite.', 'afvi'); ?></p>
+            <a href="<?php echo esc_url(home_url('/about')); ?>" class="btn btn-outline-dark mt-4"><?php echo esc_html__('Découvrir notre histoire', 'afvi'); ?> <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </section>
@@ -99,27 +101,29 @@ $hero_image = get_theme_mod('afvi_hero_image_1') ?: AFVI_URI . '/img/hero-bg-wid
     </div>
 </section>
 
-<!-- QUICK LINKS: Carte -->
-<section class="home-quick-links text-center" id="quick-links">
-    <div class="container">
-        <h2 class="section-title mb-5"><?php echo esc_html__('Carte', 'afvi'); ?></h2>
-        <div class="quick-links-grid">
-            <a href="#" class="quick-link-item">
-                <i class="fas fa-book"></i>
-                <span><?php echo esc_html__('Manuels et fournitures', 'afvi'); ?></span>
-            </a>
-            <a href="#" class="quick-link-item">
-                <i class="fas fa-video"></i>
-                <span><?php echo esc_html__('Vidéos de l\'école', 'afvi'); ?></span>
-            </a>
-            <a href="#" class="quick-link-item">
-                <i class="fas fa-book-reader"></i>
-                <span><?php echo esc_html__('Médiathèque', 'afvi'); ?></span>
-            </a>
-            <a href="#" class="quick-link-item">
-                <i class="fas fa-briefcase"></i>
-                <span><?php echo esc_html__('Recrutements', 'afvi'); ?></span>
-            </a>
+<!-- WHY CHOOSE US: Pourquoi choisir AFVI ? -->
+<section class="home-features text-center" id="why-us">
+    <div class="container container-wide">
+        <header class="home-features-head mb-5">
+            <span class="section-subtitle"><?php echo esc_html__('Nos Piliers', 'afvi'); ?></span>
+            <h2 class="section-title"><?php echo esc_html__('Pourquoi choisir AFVI ?', 'afvi'); ?></h2>
+        </header>
+        <div class="home-features-grid">
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-award"></i></div>
+                <h3 class="feature-title"><?php echo esc_html__('Excellence Académique', 'afvi'); ?></h3>
+                <p class="feature-desc"><?php echo esc_html__('Un programme rigoureux qui prépare nos élèves aux meilleures études supérieures nationales et internationales.', 'afvi'); ?></p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                <h3 class="feature-title"><?php echo esc_html__('Citoyenneté Internationale', 'afvi'); ?></h3>
+                <p class="feature-desc"><?php echo esc_html__('Un apprentissage linguistique renforcé (Français, Anglais, Arabe) pour former des individus ouverts sur le monde.', 'afvi'); ?></p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                <h3 class="feature-title"><?php echo esc_html__('Épanouissement Personnel', 'afvi'); ?></h3>
+                <p class="feature-desc"><?php echo esc_html__('Des infrastructures sportives et culturelles de premier plan pour développer tous les talents de nos élèves.', 'afvi'); ?></p>
+            </div>
         </div>
     </div>
 </section>
